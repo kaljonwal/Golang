@@ -1,0 +1,9 @@
+1)  %v vs %#v
+-->> Whenever we print the interface it's recomended to use %#v instead of %v because it will 
+     print o/p in proper format.
+     e.g 
+     %#v
+     Json data : main.Course{Name:"kalyan", Price:0, Platform:"https://github.com/kaljonwal", Tags:[]string{"github", "learning"}}
+     %v
+     {kalyan 0 https://github.com/kaljonwal [github learning]}
+    
