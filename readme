@@ -1,0 +1,14 @@
+context:
+    In Go, "context" refers to the context package, which provides a way to carry deadlines, cancellations, and other request-scoped values across API boundaries and between processes.
+
+
+In Go's context package, there are two commonly used functions for creating a new Context: context.TODO() and context.Background()
+ctx := context.Background()
+ctx := context.TODO()
+  both function returns a non-nil, empty Context
+
+To add a new value to a context, use the context.WithValue function in the context package. The function accepts three parameters: the parent context.Context, the key, and the value
+
+Once you have a context.Context with a value added to it, you can access those values using the Value method of a context.Context. Providing the Value method with a key will return the value stored.
+
+https://www.digitalocean.com/community/tutorials/how-to-use-contexts-in-go
